@@ -1,0 +1,40 @@
+{
+  "name": "gulp-starter",
+  "version": "0.1.0",
+  "description": "Current Gulp build with the full set of features and plugins",
+  "keywords": [
+    "gulp",
+    "starter"
+  ],
+  "type": "module",
+  "private": true,
+  "author": "Pavlo Zubak pashazubak@gmail.com",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development gulp dev",
+    "build": "cross-env NODE_ENV=production gulp build",
+    "clean": "gulp clean"
+  },
+  "license": "ISC",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pasha-z25/gulp-2026.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pasha-z25/gulp-2026/issues"
+  },
+  "homepage": "https://github.com/pasha-z25/gulp-2026#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.5.5",
+    "cross-env": "^10.1.0",
+    "del": "^8.0.1",
+    "gulp": "^5.0.1",
+    "gulp-html-minifier-terser": "^8.0.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-sass": "^6.0.1",
+    "postcss": "^8.5.28",
+    "sass": "^1.104.0"
+  }
+}
