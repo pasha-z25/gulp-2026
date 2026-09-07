@@ -18,6 +18,10 @@
   "engines": {
     "node": ">=24 <25"
   },
+  "browserslist": [
+    "defaults",
+    "not dead"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pasha-z25/gulp-2026.git"
@@ -28,8 +32,10 @@
   "homepage": "https://github.com/pasha-z25/gulp-2026#readme",
   "devDependencies": {
     "autoprefixer": "^10.5.5",
+    "browser-sync": "^3.0.4",
     "cross-env": "^10.1.0",
     "del": "^8.0.1",
+    "esbuild": "^0.28.2",
     "gulp": "^5.0.1",
     "gulp-html-minifier-terser": "^8.0.0",
     "gulp-postcss": "^10.0.0",

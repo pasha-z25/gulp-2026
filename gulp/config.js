@@ -1,3 +1,5 @@
+import { isDevelopment, isProduction } from './utils/environment.js';
+
 const paths = {
     src: {
         root: './src',
@@ -38,6 +40,14 @@ const config = {
 
     scripts: {
         entries: [`${paths.src.scripts}/main.js`],
+
+        esbuild: {
+            bundle: true,
+            format: 'esm',
+            target: 'es2020',
+            sourcemap: isDevelopment,
+            minify: isProduction,
+        },
     },
 
     images: {
@@ -73,6 +83,13 @@ const config = {
 
     assets: {
         entry: `${paths.src.assets}/**/*`,
+    },
+
+    watch: {
+        html: `${paths.src.html}/**/*.html`,
+        styles: `${paths.src.styles}/**/*.{scss,sass,css}`,
+        scripts: `${paths.src.scripts}/**/*.js`,
+        assets: `${paths.src.assets}/**/*`,
     },
 
     development: {
