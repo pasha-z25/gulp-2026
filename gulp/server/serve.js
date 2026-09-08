@@ -127,8 +127,10 @@ export const serve = (done) => {
         serveFile(request, response);
     });
 
-    server.listen(3000, () => {
-        console.log('Dev server: http://localhost:3000');
+    server.listen(config.server.port, () => {
+        console.log(
+            `Dev server: http://localhost:${config.server.port}`,
+        );
 
         done();
     });

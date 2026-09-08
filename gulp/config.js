@@ -27,7 +27,6 @@ const config = {
 
     server: {
         port: 3000,
-        open: true,
     },
 
     html: {
@@ -51,7 +50,6 @@ const config = {
     },
 
     images: {
-        src: `${paths.src.images}/**/*.{jpg,jpeg,png,svg}`,
         dest: paths.dist.images,
 
         responsive: {
@@ -81,13 +79,6 @@ const config = {
     },
 
     fonts: {
-        convert: true,
-
-        formats: {
-            woff: true,
-            woff2: true,
-        },
-
         generateCss: true,
 
         css: {
@@ -106,16 +97,6 @@ const config = {
         images: `${paths.src.images}/**/*.{jpg,jpeg,png,svg}`,
         fonts: `${paths.src.fonts}/**/*.{ttf,otf,woff,woff2}`,
         assets: `${paths.src.assets}/**/*`,
-    },
-
-    development: {
-        sourcemaps: true,
-        minify: false,
-    },
-
-    production: {
-        sourcemaps: false,
-        minify: true,
     },
 };
 

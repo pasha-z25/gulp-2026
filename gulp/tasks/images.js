@@ -4,6 +4,9 @@ import path from 'node:path';
 import sharp from 'sharp';
 import { optimize } from 'svgo';
 
+import { isProduction } from '../utils/environment.js';
+
+
 import config from '../config.js';
 
 const RASTER_EXTENSIONS = new Set([
@@ -12,17 +15,19 @@ const RASTER_EXTENSIONS = new Set([
     '.png',
 ]);
 
-const MAX_WIDTH = 1920;
-
-const getEnvironment = () => (
-    process.env.NODE_ENV === 'production'
-        ? 'production'
-        : 'development'
+const getMaxWidth = () => (
+    Math.max(...config.images.responsive.widths)
 );
+
+const MAX_WIDTH = getMaxWidth();
+
+const environment = isProduction
+    ? 'production'
+    : 'development';
 
 const getQuality = (format) => (
     config.images.formats[format].quality[
-    getEnvironment()
+    environment
     ]
 );
 
