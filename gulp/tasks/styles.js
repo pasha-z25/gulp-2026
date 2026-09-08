@@ -1,10 +1,13 @@
 import gulp from 'gulp';
+
 import gulpSass from 'gulp-sass';
-import dartSass from 'sass';
+import * as dartSass from 'sass';
+
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 
 import config from '../config.js';
+
 import { isProduction } from '../utils/environment.js';
 
 const sass = gulpSass(dartSass);

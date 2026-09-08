@@ -51,17 +51,31 @@ const config = {
     },
 
     images: {
-        optimize: true,
+        src: `${paths.src.images}/**/*.{jpg,jpeg,png,svg}`,
+        dest: paths.dist.images,
+
+        responsive: {
+            widths: [480, 768, 1024, 1440, 1920],
+        },
 
         formats: {
-            webp: {
-                enabled: true,
-                quality: 80,
+            jpeg: {
+                quality: {
+                    development: 82,
+                    production: 90,
+                },
             },
-
+            webp: {
+                quality: {
+                    development: 80,
+                    production: 88,
+                },
+            },
             avif: {
-                enabled: true,
-                quality: 65,
+                quality: {
+                    development: 65,
+                    production: 80,
+                },
             },
         },
     },
@@ -89,6 +103,8 @@ const config = {
         html: `${paths.src.html}/**/*.html`,
         styles: `${paths.src.styles}/**/*.{scss,sass,css}`,
         scripts: `${paths.src.scripts}/**/*.js`,
+        images: `${paths.src.images}/**/*.{jpg,jpeg,png,svg}`,
+        fonts: `${paths.src.fonts}/**/*.{ttf,otf,woff,woff2}`,
         assets: `${paths.src.assets}/**/*`,
     },
 

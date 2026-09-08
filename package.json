@@ -32,15 +32,19 @@
   "homepage": "https://github.com/pasha-z25/gulp-2026#readme",
   "devDependencies": {
     "autoprefixer": "^10.5.5",
-    "browser-sync": "^3.0.4",
     "cross-env": "^10.1.0",
     "del": "^8.0.1",
     "esbuild": "^0.28.2",
+    "fontkit": "^2.0.4",
     "gulp": "^5.0.1",
     "gulp-html-minifier-terser": "^8.0.0",
     "gulp-postcss": "^10.0.0",
     "gulp-sass": "^6.0.1",
     "postcss": "^8.5.28",
-    "sass": "^1.104.0"
+    "sass": "^1.104.0",
+    "sharp": "^0.35.4",
+    "svgo": "^4.1.0",
+    "ttf2woff": "^3.0.0",
+    "ttf2woff2": "^8.0.1"
   }
 }

@@ -12,6 +12,9 @@ export const html = () => {
             htmlmin({
                 collapseWhitespace: true,
                 removeComments: true,
+                removeRedundantAttributes: true,
+                removeEmptyAttributes: true,
+                useShortDoctype: true,
                 processScripts: ['application/ld+json'],
             }),
         );
