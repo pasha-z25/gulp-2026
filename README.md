@@ -288,17 +288,17 @@ cat.jpg
 can produce:
 
 ```text
-cat-940x640-480.jpg
-cat-940x640-768.jpg
-cat-940x640-940.jpg
+cat-480.jpg
+cat-768.jpg
+cat-940.jpg
 
-cat-940x640-480.webp
-cat-940x640-768.webp
-cat-940x640-940.webp
+cat-480.webp
+cat-768.webp
+cat-940.webp
 
-cat-940x640-480.avif
-cat-940x640-768.avif
-cat-940x640-940.avif
+cat-480.avif
+cat-768.avif
+cat-940.avif
 ```
 
 The original image dimensions are respected, so larger variants are not generated when they exceed the source dimensions.
@@ -316,23 +316,23 @@ Example:
     <source
         type="image/avif"
         srcset="
-            /images/cat-940x640-480.avif 480w,
-            /images/cat-940x640-768.avif 768w,
-            /images/cat-940x640-940.avif 940w
+            /images/cat-480.avif 480w,
+            /images/cat-768.avif 768w,
+            /images/cat-940.avif 940w
         "
     >
 
     <source
         type="image/webp"
         srcset="
-            /images/cat-940x640-480.webp 480w,
-            /images/cat-940x640-768.webp 768w,
-            /images/cat-940x640-940.webp 940w
+            /images/cat-480.webp 480w,
+            /images/cat-768.webp 768w,
+            /images/cat-940.webp 940w
         "
     >
 
     <img
-        src="/images/cat-940x640-940.jpg"
+        src="/images/cat-940.jpg"
         alt="Cat"
         width="940"
         height="640"
