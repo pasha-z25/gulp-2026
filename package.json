@@ -14,22 +14,6 @@
     "build": "cross-env NODE_ENV=production gulp build",
     "clean": "gulp clean"
   },
-  "license": "ISC",
-  "engines": {
-    "node": ">=24 <25"
-  },
-  "browserslist": [
-    "defaults",
-    "not dead"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pasha-z25/gulp-2026.git"
-  },
-  "bugs": {
-    "url": "https://github.com/pasha-z25/gulp-2026/issues"
-  },
-  "homepage": "https://github.com/pasha-z25/gulp-2026#readme",
   "devDependencies": {
     "autoprefixer": "^10.5.5",
     "cross-env": "^10.1.0",
@@ -46,5 +30,20 @@
     "svgo": "^4.1.0",
     "ttf2woff": "^3.0.0",
     "ttf2woff2": "^8.0.1"
-  }
+  },
+  "license": "ISC",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "browserslist": [
+    "defaults and fully supports es6-module"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pasha-z25/gulp-2026.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pasha-z25/gulp-2026/issues"
+  },
+  "homepage": "https://github.com/pasha-z25/gulp-2026#readme"
 }
